@@ -1,0 +1,39 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Dell\Desktop\TestIntr\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Dell/Desktop/TestIntr/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5070 bytes. 0x2f90 bytes (37%) free.
+[2/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Task.c.obj
+C:/Users/Dell/Desktop/TestIntr/main/Task.c:16:22: warning: 'debounceTimer_2' defined but not used [-Wunused-variable]
+   16 | static TimerHandle_t debounceTimer_2 = NULL;
+      |                      ^~~~~~~~~~~~~~~
+In file included from C:/Users/Dell/Desktop/TestIntr/main/Task.c:10:
+C:/Users/Dell/Desktop/TestIntr/main/main.h:6:20: warning: 'TAG_Temp' defined but not used [-Wunused-variable]
+    6 | static const char *TAG_Temp = "Nhiet do, do am: ";
+      |                    ^~~~~~~~
+C:/Users/Dell/Desktop/TestIntr/main/main.h:5:20: warning: 'TAG_Gas' defined but not used [-Wunused-variable]
+    5 | static const char *TAG_Gas = "Nguong khi ga: ";
+      |                    ^~~~~~~
+[3/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gpio_wakeup.c.obj
+In file included from C:/Users/Dell/Desktop/TestIntr/main/gpio_wakeup.c:6:
+C:/Users/Dell/Desktop/TestIntr/main/main.h:5:20: warning: 'TAG_Gas' defined but not used [-Wunused-variable]
+    5 | static const char *TAG_Gas = "Nguong khi ga: ";
+      |                    ^~~~~~~
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/Users/Dell/Desktop/TestIntr/main/main.c:13:
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from C:/Users/Dell/Desktop/TestIntr/main/main.c:16:
+C:/Users/Dell/Desktop/TestIntr/main/main.h:6:20: warning: 'TAG_Temp' defined but not used [-Wunused-variable]
+    6 | static const char *TAG_Temp = "Nhiet do, do am: ";
+      |                    ^~~~~~~~
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable TestIntr.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated C:/Users/Dell/Desktop/TestIntr/build/TestIntr.bin
+[9/9] cmd.exe /C "cd /D C:\Users\Dell\Desktop\TestIntr\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Dell/Desktop/TestIntr/build/partition_table/partition-table.bin C:/Users/Dell/Desktop/TestIntr/build/TestIntr.bin"
+TestIntr.bin binary size 0x36780 bytes. Smallest app partition is 0x100000 bytes. 0xc9880 bytes (79%) free.

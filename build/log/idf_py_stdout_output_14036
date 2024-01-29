@@ -1,0 +1,24 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\Dell\Desktop\TestIntr\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/Dell/Desktop/TestIntr/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5070 bytes. 0x2f90 bytes (37%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from C:/Users/Dell/Desktop/TestIntr/main/main.c:80:
+C:/Espressif/frameworks/esp-idf-v5.1.2/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from C:/Users/Dell/Desktop/TestIntr/main/main.c:83:
+C:/Users/Dell/Desktop/TestIntr/main/main.h:6:20: warning: 'TAG_Temp' defined but not used [-Wunused-variable]
+    6 | static const char *TAG_Temp = "Nhiet do, do am: ";
+      |                    ^~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Building C object CMakeFiles/TestIntr.elf.dir/project_elf_src_esp32c3.c.obj
+[6/8] Linking CXX executable TestIntr.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32c3 image...
+Merged 1 ELF section
+Successfully created esp32c3 image.
+Generated C:/Users/Dell/Desktop/TestIntr/build/TestIntr.bin
+[8/8] cmd.exe /C "cd /D C:\Users\Dell\Desktop\TestIntr\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/Dell/Desktop/TestIntr/build/partition_table/partition-table.bin C:/Users/Dell/Desktop/TestIntr/build/TestIntr.bin"
+TestIntr.bin binary size 0x343b0 bytes. Smallest app partition is 0x100000 bytes. 0xcbc50 bytes (80%) free.

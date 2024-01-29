@@ -1,0 +1,21 @@
+dependencies:
+  hayschan/buzzer:
+    component_hash: ed8b35d8d2d662379010dd44624e3d0ac88ec9027a99f1091663dda821f3051d
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.0.0
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.1.2
+  suda-morris/am2302_rmt:
+    component_hash: b46dd8c20dee72654e8ea4a43b16e8a93e984a6c10426392a4b8486fed50ca93
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.0.0
+manifest_hash: 1c1a863f13fee371266948a74c2a5b68794e37672a5a3d44bb639e05ff1033f3
+target: esp32c3
+version: 1.0.0

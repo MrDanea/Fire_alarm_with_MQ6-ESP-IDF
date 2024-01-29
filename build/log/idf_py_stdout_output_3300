@@ -1,0 +1,91 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x170c
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2f9c
+entry 0x403cc710
+[0;32mI (30) boot: ESP-IDF GIT-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Jan 21 2024 12:29:24[0m
+[0;32mI (30) boot: chip revision: v0.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (39) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b0d0h ( 45264) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001b0f8 vaddr=3fc8cc00 size=01298h (  4760) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001c398 vaddr=40380000 size=03c80h ( 15488) load[0m
+[0;32mI (119) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1d898h (120984) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0003d8c0 vaddr=40383c80 size=08ec8h ( 36552) load[0m
+[0;32mI (151) esp_image: segment 5: paddr=00046790 vaddr=50000010 size=00004h (     4) load[0m
+[0;32mI (155) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (156) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Unicore app[0m
+[0;32mI (173) cpu_start: Pro cpu up.[0m
+[0;32mI (182) cpu_start: Pro cpu start user code[0m
+[0;32mI (182) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) cpu_start: Application information:[0m
+[0;32mI (185) cpu_start: Project name:     TestIntr[0m
+[0;32mI (190) cpu_start: App version:      1[0m
+[0;32mI (194) cpu_start: Compile time:     Jan 21 2024 12:29:13[0m
+[0;32mI (200) cpu_start: ELF file SHA256:  9023563b92766001...[0m
+[0;32mI (206) cpu_start: ESP-IDF:          GIT-NOTFOUND[0m
+[0;32mI (212) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (217) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (221) cpu_start: Chip rev:         v0.3[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FC8EF10 len 000310F0 (196 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (247) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (254) heap_init: At 50000014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;32mI (261) spi_flash: detected chip: generic[0m
+[0;32mI (265) spi_flash: flash io: dio[0m
+[0;33mW (269) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (282) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (291) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (297) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (305) app_start: Starting scheduler on CPU0[0m
+[0;32mI (309) main_task: Started on CPU0[0m
+[0;32mI (309) main_task: Calling app_main()[0m
+[0;32mI (309) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (379) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (379) gpio: GPIO[6]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (389) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (399) gpio: GPIO[1]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (409) gpio: GPIO[1]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15419) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+Waiting for GPIO9 to go high...
+[0;32mI (15419) gpio_wakeup: gpio wakeup source is ready[0m
+Entering light sleep
+Returned from light sleep, reason: pin, t=62885 ms, slept for 47446 ms
+Waiting for GPIO9 to go high...
+[0;32mI (15439) main_task: Returned from app_main()[0m
+[0;32mI (15499) Nguong khi ga: : Value: 10.0516 /10[0m
+[0;32mI (15539) Nhiet do, do am: : Temperature: 17.9 °C, Humidity: 46.8 %[0m
+[0;32mI (17589) Nguong khi ga: : Value: 10.6983 /10[0m
+[0;32mI (17629) Nhiet do, do am: : Temperature: 17.9 °C, Humidity: 46.9 %[0m
+[0;32mI (19679) Nguong khi ga: : Value: 10.7380 /10[0m
+[0;32mI (19719) Nhiet do, do am: : Temperature: 17.9 °C, Humidity: 46.9 %[0m
+[0;32mI (21769) Nguong khi ga: : Value: 10.7376 /10[0m
+[0;32mI (21809) Nhiet do, do am: : Temperature: 17.9 °C, Humidity: 46.9 %[0m
+[0;32mI (23859) Nguong khi ga: : Value: 10.7218 /10[0m
+[0;32mI (23899) Nhiet do, do am: : Temperature: 17.9 °C, Humidity: 46.9 %[0m
+[0;32mI (25949) Nguong khi ga: : Value: 10.7598 /10[0m
+[0;32mI (25989) Nhiet do, do am: : Temperature: 17.9 °C, Humidity: 46.9 %[0m
+[0;32mI (28039) Nguong khi ga: : Value: 10.7506 /10[0m
+[0;32mI (28079) Nhiet do, do am: : Temperature: 17.9 °C, Humidity: 46.9 %[0m
+[0;32mI (30129) Nguong khi ga: : Value: 10.7598 /10[0m
+[0;32mI (30169) Nhiet do, do am: : Temperature: 17.9 °C, Humidity: 46.9 %[0m
+[0;32mI (32219) Nguong khi ga: : Value: 10.7062 /10[0m
+[0;32mI (32259) Nhiet do, do am: : Temperature: 17.9 °C, Humidity: 46.9 %[0m
+[0;32mI (34309) Nguong khi ga: : Value: 10.7289 /10[0m
+[0;32mI (34349) Nhiet do, do am: : Temperature: 17.9 °C, Humidity: 47.0 %[0m
+Entering light sleep
